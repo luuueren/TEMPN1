@@ -1,0 +1,557 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.load {
+    display: flex;
+    justify-content: center;
+    /* margin: 50px auto; */
+    align-items: center;
+    margin-right: 50%;
+    margin-top: 20%;
+}
+
+.load div {
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation-name: okey;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+.load .two {
+    animation-delay: 0.2s;
+}
+
+.load .three {
+    animation-delay: 0.4s;
+}
+
+@keyframes okey {
+    to {
+        opacity: 0.2;
+        transform: translateY(20px);
+        -webkit-transform: translateY(20px);
+        -moz-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        -o-transform: translateY(20px);
+    }
+}
+
+
+
+/* .newdiv {
+    background-color: gray;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: red solid 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-left-color: transparent;
+    transition: transform .3s;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-delay: 2s;
+    animation-play-state: running;
+}
+
+.newdiv:hover {
+    animation-play-state: paused;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+        r-webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+} */
+
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    width: 400px;
+    margin: 40px auto;
+}
+
+.box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+
+}
+
+
+.box .face {
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    animation-name: change-color;
+    animation-duration: 6s;
+    top: 200px;
+    left: 200px;
+}
+
+@keyframes change-color {
+    0% {
+        background-color: red;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    75% {
+        background-color: green;
+    }
+}
+
+
+.container {
+    width: 400px;
+    margin: 40px auto;
+}
+
+.box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+
+}
+
+
+.box .face {
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    animation-name: change-color;
+    animation-duration: 6s;
+    top: 200px;
+    left: 200px;
+}
+
+@keyframes change-color {
+    0% {
+        background-color: red;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    75% {
+        background-color: green;
+    }
+} */
+
+
+
+/* 
+
+.shape {
+    background-color: #EEE;
+    width: 25%;
+    height: 25%;
+    margin-left: 5%;
+    margin-top: 5%;
+
+}
+
+.image {
+    overflow: hidden;
+    width: 500px;
+    height: 200px;
+
+}
+
+.image img {
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+
+}
+
+.image:hover img {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+.shape div {
+    width: 200Px;
+    height: 200px;
+    background-color: pink;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 5%;
+    margin-left: 5%;
+
+} */
+
+/* .parent {
+    margin: 20px auto;
+    height: 300px;
+    background-color: #EEE;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+} */
+
+/*------------------------------------------*/
+/* .flex {
+    display: flex;
+    overflow: hidden;
+    background-color: #EEE;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+.flex div {
+    background-color: red;
+    color: white;
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
+
+
+img {
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+
+img:hover {
+    filter: blur(0);
+    -webkit-filter: blur(0);
+}
+
+.zdiv {
+    background-image: linear-gradient(to right, green, white, red);
+    width: 600px;
+    height: 300px;
+
+} */
+
+/* .float {
+    display: flex;
+    overflow: hidden;
+    background-color: #EEE;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.float div {
+    background-color: red;
+    color: white;
+    float: left;
+    width: 15%;
+    text-align: center;
+    padding: 20px;
+} */
+
+
+
+
+
+
+
+
+
+/* :root {
+    --colorofdiv: blue;
+}
+
+.one {
+    width: 200px;
+    height: 100px;
+    background-color: var(--colorofdiv);
+    padding: 20px;
+    margin: 30px 50px;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+    transition-property: margin-left, margin-top;
+    transition-timing-function: linear;
+}
+
+.one:hover {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 250px;
+}
+
+.two {
+    width: 200px;
+    height: 100px;
+    background-color: greenyellow;
+    padding: 20px;
+    margin: 30px 50px;
+} */
+
+/* body {
+    margin: 8px;
+}
+
+.parent {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.parent2 {
+    background-color: aqua;
+    margin-right: 20px;
+    padding: 10px;
+    float: left;
+    width: 50px;
+    height: 55.5px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.lorem {
+    background-color: #EEE;
+    width: 600px;
+    padding: 10px;
+    float: left;
+}
+
+.lorem::before {
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-color: transparent blue transparent transparent;
+    border: solid s;
+} */
+
+
+
+
+
+
+/* .one span {
+    display: inline-block;
+    color: white;
+    background-color: red;
+    font-size: 30px;
+}
+
+.two::first-letter {
+    display: inline-block;
+    color: black;
+    background-color: gray;
+    font-size: 30px;
+}
+
+.three::first-line {
+    font-weight: bold;
+    color: green;
+}
+
+.four::selection {
+    background-color: yellow;
+} */
+
+
+
+
+
+
+/* .one{
+    background-color: aqua;
+}
+.two{
+    background-color: aquamarine;
+} */
+
+
+/* div{
+    width: 100px;
+    color: black;
+    padding: 10px;
+}
+
+.one{
+    background-color:red;
+}
+.two{
+    background-color:blue;
+} */
+
+
+/* body{
+margin: O;
+}
+
+div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #EEE;
+    text-align: center;
+    float:left;
+    width: 23.75%;
+    margin-left: 1%;
+} */
+
+
+/* body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+div{
+    background-color: #EEE;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+} */
+
+
+
+/* div{
+    background-color: #EEE;
+    text-align: center;
+    direction: ltr; right to left
+} */
+
+
+
+/* .One {
+    border-bottom: 2px solid red;
+    color: red;
+}
+
+.Two {
+    border-bottom: 2px solid green;
+    color: green;
+}
+
+.Three {
+    border-bottom: 2px solid blue;
+    color: blue;
+}
+
+.Four {
+    border-bottom: 2px solid orange;
+    color: orange;
+}
+
+.One,
+.Two,
+.Three,
+.Four{
+        padding: 10px;
+        background-color: #EEE;
+            margin: 10px 0;
+} */
+
+
+
+
+
+
+
+
+
+/* div {
+    background-color:#EEE;
+    padding: 20px;
+    margin: 20px;
+}  */
+
+/* span{
+    background-color: #EEE;
+    padding: 10px; 
+    margin: 20px;
+     width: 500px; 
+    height: 50px;   
+} */
